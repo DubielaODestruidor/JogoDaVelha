@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             // from 0 to 1 or 1 to 0
             if (activePlayer == 0) {
                 // set the image of x
-                img.setImageResource(R.drawable.x);
+                img.setImageResource(R.drawable.sapo);
                 activePlayer = 1;
                 TextView status = findViewById(R.id.status);
 
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 status.setText("Vez da capivara");
             } else {
                 // set the image of o
-                img.setImageResource(R.drawable.bolinha);
+                img.setImageResource(R.drawable.capivara);
                 activePlayer = 0;
                 TextView status = findViewById(R.id.status);
 

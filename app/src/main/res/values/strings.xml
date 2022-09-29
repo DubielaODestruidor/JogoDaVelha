@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">JogoDaVelha</string>
+    <string name="sapos_amp_capivaras"><![CDATA[Sapos & Capivaras]]></string>
+    <string name="start">Start</string>
+    <string name="superior_direito">Superior direito</string>
+    <string name="clique_para_comecar">Clique para começar</string>
+    <string name="superior_esquerdo">Superior esquerdo</string>
+    <string name="centro_superior">Centro superior</string>
+    <string name="meio_esquerdo">Meio esquerdo</string>
+    <string name="meio_meio">Meio meio</string>
+    <string name="meio_direito">Meio direito</string>
+    <string name="inferior_esquerdo">Inferior esquerdo</string>
+    <string name="meio_inferior">Meio inferior</string>
+    <string name="inferior_direito">Inferior direito</string>
 </resources>

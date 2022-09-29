@@ -12,10 +12,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="24dp"
         android:text="@string/sapos_amp_capivaras"
         android:textColor="#00897B"
-        android:textSize="45sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:fontFamily="sans-serif-black"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -24,10 +24,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_width="414dp"
+        android:layout_height="401dp"
         android:contentDescription="@string/start"
+        app:layout_constraintBottom_toTopOf="@+id/status"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -35,13 +35,13 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="420dp"
+        android:layout_width="409dp"
+        android:layout_height="397dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView">
+        app:layout_constraintBottom_toTopOf="@+id/status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,10 +54,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/superior_direito"
                 android:onClick="playerTap"
                 android:padding="20sp"
                 android:tag="0"
-                android:contentDescription="@string/superior_direito"
                 tools:ignore="NestedWeights" />
 
             <ImageView
@@ -65,20 +65,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/centro_superior"
                 android:onClick="playerTap"
                 android:padding="20sp"
-                android:tag="1"
-                android:contentDescription="@string/centro_superior" />
+                android:tag="1" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/superior_esquerdo"
                 android:onClick="playerTap"
                 android:padding="20sp"
-                android:tag="2"
-                android:contentDescription="@string/superior_esquerdo" />
+                android:tag="2" />
         </LinearLayout>
 
         <LinearLayout
@@ -92,10 +92,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/meio_esquerdo"
                 android:onClick="playerTap"
                 android:padding="20sp"
                 android:tag="3"
-                android:contentDescription="@string/meio_esquerdo"
                 tools:ignore="NestedWeights" />
 
             <ImageView
@@ -103,20 +103,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/meio_meio"
                 android:onClick="playerTap"
                 android:padding="20sp"
-                android:tag="4"
-                android:contentDescription="@string/meio_meio" />
+                android:tag="4" />
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/meio_direito"
                 android:onClick="playerTap"
                 android:padding="20sp"
-                android:tag="5"
-                android:contentDescription="@string/meio_direito" />
+                android:tag="5" />
         </LinearLayout>
 
         <LinearLayout
@@ -130,10 +130,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/inferior_esquerdo"
                 android:onClick="playerTap"
                 android:padding="20sp"
                 android:tag="6"
-                android:contentDescription="@string/inferior_esquerdo"
                 tools:ignore="NestedWeights" />
 
             <ImageView
@@ -141,29 +141,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/meio_inferior"
                 android:onClick="playerTap"
                 android:padding="20sp"
-                android:tag="7"
-                android:contentDescription="@string/meio_inferior" />
+                android:tag="7" />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:contentDescription="@string/inferior_direito"
                 android:onClick="playerTap"
                 android:padding="20sp"
-                android:textColor="@color/black"
                 android:tag="8"
-                android:contentDescription="@string/inferior_direito" />
+                android:textColor="@color/black" />
         </LinearLayout>
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/status"
-        android:layout_width="272dp"
+        android:layout_width="wrap_content"
         android:layout_height="56dp"
+        android:layout_marginStart="16dp"
         android:layout_marginBottom="48dp"
         android:text="@string/clique_para_comecar"
         android:textColor="#00897B"
@@ -171,8 +172,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

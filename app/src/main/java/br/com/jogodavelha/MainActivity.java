@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 TextView status = findViewById(R.id.status);
 
                 // change the status
-                status.setText("O's Turn - Tap to play");
+                status.setText("Vez da capivara");
             } else {
                 // set the image of o
                 img.setImageResource(R.drawable.bolinha);
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 TextView status = findViewById(R.id.status);
 
                 // change the status
-                status.setText("X's Turn - Tap to play");
+                status.setText("Vez do sapo");
             }
             img.animate().translationYBy(1000f).setDuration(300);
         }
@@ -95,9 +95,9 @@ public class MainActivity extends AppCompatActivity {
                 // game reset function be called
                 gameActive = false;
                 if (gameState[winPosition[0]] == 0) {
-                    winnerStr = "X has won";
+                    winnerStr = "Sapo ganhou!";
                 } else {
-                    winnerStr = "O has won";
+                    winnerStr = "Capivara ganhou!";
                 }
                 // Update the status bar for winner announcement
                 TextView status = findViewById(R.id.status);
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
         // set the status if the match draw
         if (counter == 9 && flag == 0) {
             TextView status = findViewById(R.id.status);
-            status.setText("Match Draw");
+            status.setText("Empate!");
         }
     }
 
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         ((ImageView) findViewById(R.id.imageView8)).setImageResource(0);
 
         TextView status = findViewById(R.id.status);
-        status.setText("X's Turn - Tap to play");
+        status.setText("Vez do sapo");
     }
 
     @Override
